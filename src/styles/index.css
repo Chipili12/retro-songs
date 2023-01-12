@@ -1,12 +1,51 @@
+ul {
+    list-style-type: none;
+}
 
-/* 
+body {
+    background-color: black;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+li:hover {
+    background-color: rgb(92, 92, 92);
+}
 
-*/
+.wrapper {
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: auto;
+    margin-top: 15rem;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 9px;
+    background-color: rbg(33, 37, 41);
+}
+
+.controles {
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 1500;
+    padding-right: 50px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 141, 141);
+    border-radius: 9px;
+}
+
+.wrapper::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: yellow;
+    width: 0%;
+    transition: width 0.2s linear;
+}
